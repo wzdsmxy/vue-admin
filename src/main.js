@@ -14,9 +14,12 @@ import Mock from './mock'
 Mock.bootstrap();
 import 'font-awesome/css/font-awesome.min.css'
 
+import i18n from './tools/i18n'
+
 Vue.use(ElementUI)
 Vue.use(VueRouter)
 Vue.use(Vuex)
+
 
 //NProgress.configure({ showSpinner: false });
 
@@ -46,6 +49,7 @@ new Vue({
   //template: '<App/>',
   router,
   store,
+  i18n, 
   //components: { App }
   render: h => h(App)
 }).$mount('#app')
